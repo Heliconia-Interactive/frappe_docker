@@ -1,0 +1,12 @@
+services:
+  frontend:
+    networks:
+      - default
+      - webproxy
+    ports:
+      - 8080
+
+networks:
+  webproxy:
+    external: true
+    
